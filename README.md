@@ -202,5 +202,5 @@ ERROR ... keras requires tensorflow 2.2 or higher. install tensorflow via pip in
 [참고한 링크2](https://forums.developer.nvidia.com/t/import-keras-requires-tensorflow-2-2-or-higher/140572)
 
 ```
-pip install keras==2.3.1
+pip3 install keras==2.3.1
 ```
