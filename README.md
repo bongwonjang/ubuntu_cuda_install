@@ -157,7 +157,7 @@ python3 -c "import torch; print(torch.cuda.is_available())"
 python3 -c "import tensorflow as tf; print(tf.test.is_gpu_available())"
 ```
 
-## 추가: 간혹 librosa 패키지를 설치할 때 생기는 building wheel for llvmlite <br>또는 building wheel for numba 문제해결
+## 추가: 간혹 librosa(0.6.3 old ver) 패키지를 설치할 때 생기는 building wheel for llvmlite <br>또는 building wheel for numba 문제해결
 
 * python3 환경을 가정
   <br>[참고한 링크](https://acver.tistory.com/6)
@@ -168,13 +168,13 @@ sudo apt-get install llvm-7
 ```
 
 ```
-sudo LLVM_CONFG=/usr/bin/llvm-config-7 pip3 install llvmlite==0.32.0
+sudo LLVM_CONFG=/usr/bin/llvm-config-7 pip3 install llvmlite==0.31.0
 
-sudo LLVM_CONFG=/usr/bin/llvm-config-7 pip3 install numba==0.43.0
+sudo LLVM_CONFG=/usr/bin/llvm-config-7 pip3 install numba==0.48.0
 ```
 
 ```
-sudo LLVM_CONFG=/usr/bin/llvm-config-7 pip3 install librosa
+sudo LLVM_CONFG=/usr/bin/llvm-config-7 pip3 install librosa==0.6.3
 ```
 
 ```
